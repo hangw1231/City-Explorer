@@ -1,0 +1,121 @@
+.shoes-wrap {
+    max-width: 1280px;
+    min-height: 120vh;
+    margin: 0 auto;
+}
+.shoes-wrap header {
+    padding: 20px 8%;
+    background: var(--brand1);
+    color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shoes-wrap header h1 {
+    font-family: var(--font-h2);
+    font-size: 24px;
+    color: var(--brand2);
+    font-weight: 600;
+}
+.shoes-wrap header .cart {
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.shoes-wrap main {
+    margin: 40px 0;    
+}
+.shoes-wrap .shoes-cont {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.shoes-wrap main figure {
+    width: 40%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.shoes-wrap img {
+    max-width: 100%;
+}
+.shoes-cont .shoes-info {
+    width: 40%;
+}
+.shoes-cont .shoes-info h2 {
+    font-family: var(--font-h2);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.shoes-cont .shoes-info .price {
+    font-size: 20px;
+    color: var(--highlight);
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.action{
+    margin-bottom: 25px;
+}
+.btn {
+    padding: 5px 8px;
+    border-radius: 5px;
+    background: var(--muted);
+    color: #fff;
+}
+.btn.primary {
+    background: var(--highlight);
+    margin-right: 5px;
+}
+
+button[role="tab"] {
+    padding: 8px 16px;
+    background: #dfe2e2;
+    margin-right: 5px;
+    border-radius: 8px;
+}
+button[role="tab"].active {
+    background: var(--brand2);
+    color: #fff;
+}
+.tab-panel {
+    padding: 20px
+}
+
+/* modal */
+.modal-bg {
+    position: fixed;
+    inset: 0;
+    background: rgba(54, 43, 81, 0.4);
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+.modal-panel {
+    position: relative;
+    max-width: min(760px, 90vw);
+    max-height: 80vh;
+    overflow: auto;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+.modal-panel img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.modal-panel button {
+    position: absolute;
+    padding: 7px 10px;
+    background: #dfe2e2;
+    border-radius: var(--radius);
+    top: 10px; right: 10px;
+    cursor: pointer;
+}
+
+/* toast */
+.toast {
+  position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%);
+  background: #0ea5e9; color: #fff; padding: 10px 14px; border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.2); font-weight: 600;
+  animation: slideUp 0.22s ease-out both;
+}
